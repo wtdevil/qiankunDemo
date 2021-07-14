@@ -1,4 +1,4 @@
-# my-phaser-component
+# project-part-one
 
 ## Project setup
 ```

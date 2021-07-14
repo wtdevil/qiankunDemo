@@ -1,5 +1,5 @@
 {
-  "name": "my-phaser-component",
+  "name": "project-part-one",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,13 +8,12 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "babel-loader": "^8.1.0",
     "core-js": "^3.6.5",
-    "phaser": "^3.55.2",
-    "qiankun": "^2.4.3",
+    "file-loader": "^6.2.0",
+    "loadsh": "^0.0.4",
+    "url-loader": "^4.1.1",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.10",
-    "ws": "^3.3.2"
+    "vue-router": "^4.0.10"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",
@@ -22,6 +21,7 @@
     "@vue/cli-service": "~4.5.0",
     "@vue/compiler-sfc": "^3.0.0",
     "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
     "eslint-plugin-vue": "^7.0.0"
   },
   "eslintConfig": {

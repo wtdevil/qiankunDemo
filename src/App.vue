@@ -1,15 +1,19 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <router-view></router-view>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import { onBeforeRouteUpdate } from 'vue-router'
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: {},
+  setup() {
+    onBeforeRouteUpdate((to, from) => {
+      console.log(to, from);
+    });
+    return {
+
+    }
   }
 }
 </script>
@@ -21,6 +25,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  height: 100%;
+  width: 100%;
+}
+body{
+  padding: 0;
+  margin:0
 }
 </style>
